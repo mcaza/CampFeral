@@ -1,0 +1,476 @@
+/* Font Families */
+
+/* latin */
+@font-face {
+    font-family: 'Cabin Sketch';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/cabinsketch/v21/QGYpz_kZZAGCONcK2A4bGOj8mNhN.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Cabin Sketch';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/cabinsketch/v21/QGY2z_kZZAGCONcK2A4bGOj0I_1Y5tjz.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Gochi Hand';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/gochihand/v23/hES06XlsOjtJsgCkx1Pkfon_-w.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/permanentmarker/v16/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Rock Salt';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/rocksalt/v22/MwQ0bhv11fWD6QsAVOZrt0M6.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Universal Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+    max-width: 85%;
+    margin: auto;
+    background-image: url(campbackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Nav Styles */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #010e12;
+    margin-top: 0;
+    border-bottom: 2px white dashed;
+}
+
+.social-container ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.social-container img {
+    width: 3.65rem;
+    height: auto;
+    padding: .8rem;
+    filter: invert(92%) sepia(100%) saturate(1%) hue-rotate(349deg) brightness(106%) contrast(101%);
+}
+
+.social-container img:hover {
+    width: 3.575rem;
+    height: auto;
+}
+
+.logo p {
+    font-family: 'Cabin Sketch';
+    font-size: 4rem;
+    color: #fec343;
+    margin-left: 1.5rem;
+}
+
+
+/* Banner Styles */
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(BwE0H8dCEAAvAcp.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px white dashed;
+}
+
+.button-container a {
+    background-color: #0b493a;
+    color: white;
+    padding: 1.5rem 2.5rem;
+    font-size: 3rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Permanent Marker';
+}
+
+.button-container a:hover {
+    border: #031611 2px solid;
+    font-size: 3.05rem;
+}
+
+.button-container a:active {
+    background-color: #031611;
+    border: #0b493a 2px solid;
+    color: #0b493a;
+}
+
+.banner-container h1 {
+    margin-bottom: 2rem;
+    font-family: 'Gochi Hand';
+    font-weight: bold;
+    color: white;
+    font-size: 7rem;
+    text-align: center;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke: 2px black;
+}
+
+.text-container {
+    margin-bottom: 2rem;
+}
+
+/* Photos Area Styles */
+
+.photos-container {
+    background-color: #F5FFFA;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.title-container h2 {
+    font-size: 4rem;
+    font-family: 'Rock Salt';
+    color: #30745b;
+}
+
+.furries-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.furry-container {
+    border: 1px solid #191919;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 1rem;
+    -webkit-box-shadow: 0 12px 12px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 12px 12px rgba(0, 0, 0, .3);
+    box-shadow: 0 12px 12px rgba(0, 0, 0, .3);
+}
+
+.furry-container:hover {
+    border: 2px solid #191919;
+}
+
+.furry-container p {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Permanent Marker';
+    font-size: 3rem;
+    color: #191919;
+}
+
+.furry-container img {
+    width: 90%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    overflow: clip;
+}
+
+/* Information Styles */
+
+.info-container {
+    background-color: #0b493a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-bottom: 2px white dashed;
+    border-top: 2px white dashed;
+}
+
+.info-container h2 {
+    color: white;
+}
+
+.tidbit-containers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tidbit {
+    width: 25rem;
+    background: #ffa;
+    overflow: hidden;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 0 0 0 30px/45px;
+    box-shadow:
+        inset 0 -40px 40px rgba(0, 0, 0, 0.2),
+        inset 0 25px 10px rgba(0, 0, 0, 0.2),
+        0 5px 6px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.7em;
+    font-size: 19px;
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+.tidbit h3 {
+    text-align: center;
+    font-family: 'Permanent Marker';
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: solid 1px gray;
+}
+
+.tidbit p {
+    text-align: center;
+    font-family: 'Gochi Hand', sans-serif;
+}
+
+/* Footer Styles */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #010e12;
+    margin-top: 0;
+    padding: 1rem;
+}
+
+.footer-container p {
+    color: white;
+    font-family: 'Cabin Sketch';
+}
+
+.contact-us a {
+    font-family: 'Cabin Sketch';
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+/* @Media Styles */
+
+@media only screen and (max-width: 719px) {
+    body {
+        width: fit-content;
+        margin: auto;
+        background-image: none;
+        background-color: #06251d;
+    }
+
+    .social-container {
+        display: none;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        padding-right: 1rem;
+    }
+
+    .logo p {
+        font-size: 2.5rem;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+    }
+
+    .banner-container {
+        justify-content: space-evenly;
+        align-items: center;
+        height: 280px;
+        padding-top: 0;
+        padding-bottom: .75rem;
+        row-gap: 1rem;
+        background-color: #010e12;
+    }
+
+    .text-container h1 {
+        padding: .5rem;
+        font-size: 2rem;
+        opacity: 95%;
+        -webkit-text-fill-color: black;
+        -webkit-text-stroke: 0px transparent;
+        margin-bottom: 0;
+    }
+
+    .text-container {
+        background-image: url(transparentsquare.png);
+        margin: 0 20px;
+        color: black;
+        border-radius: 20px;
+    }
+
+    .button-container a {
+        font-size: 1.5rem;
+        padding: 1rem;
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+
+    .title-container h2 {
+        font-size: 2rem;
+    }
+
+    .info-container h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        padding-bottom: .25rem;
+        border-bottom: 1px white solid;
+    }
+
+    .tidbit {
+        min-width: 14rem;
+        max-width: 17rem;
+        margin: 0;
+        margin-bottom: 1rem;
+
+    }
+
+    .footer-container p {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+     .tidbit {
+        min-width: 10rem;
+        max-width: 12rem;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .text-container {
+        background-image: url(transparentsquare.png);
+        margin: 0 20px;
+        color: black;
+        border-radius: 20px;
+    }
+    
+    .text-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .title-container h2 {
+        font-size: 1.25rem;
+    }
+    
+    .info-container h2 {
+        font-size: .8rem;
+        margin-bottom: .5rem;
+        border: none;
+    }
+}
+
+@media only screen and (min-width:720px) and (max-width: 1200px) {
+    body {
+        width: 100%;
+        margin: auto;
+        background-image: none;
+        background-color: #06251d;
+    }
+    
+    .social-container {
+        padding-right: .5rem;
+    }
+
+    .social-container img {
+        width: 2rem;
+        height: auto;
+        padding: .45rem;
+    }
+    
+    .banner-container {
+        height: 400px;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: .5rem;
+        row-gap: .5em;
+        background-color: #010e12;
+    }
+    
+    .text-container h1 {
+        padding: .5rem;
+        font-size: 3.5rem;
+        opacity: 95%;
+        -webkit-text-fill-color: black;
+        -webkit-text-stroke: 0px transparent;
+        margin-bottom: 0;
+    }
+
+    .text-container {
+        background-image: url(transparentsquare.png);
+        margin: 0 20px;
+        color: black;
+        border-radius: 20px;
+    }
+    
+    .button-container a {
+        font-size: 2.5m;
+        padding: 1rem;
+        border: 1px solid white;
+        border-radius: 20px;
+    }
+    
+    .tidbit-containers {
+        justify-content: center;
+    }
+    
+     .tidbit {
+        width: 90%;
+        margin: 0;
+        margin-bottom: 1rem;
+
+    }
+    
+    .furries-container {
+        justify-content: center;
+    }
+    
+    .info-container h2 {
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
+    }
+}
